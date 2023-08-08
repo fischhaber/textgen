@@ -51,6 +51,11 @@ from modules.text_generation import (
 )
 from modules.utils import gradio
 
+# Next 2 lines copied from https://github.com/cinemagoer/cinemagoer on 24 th of July 2023
+from imdb import Cinemagoer
+
+# create an instance of the Cinemagoer class
+ia = Cinemagoer()
 
 def load_model_wrapper(selected_model, loader, autoload=False):
     if not autoload:
